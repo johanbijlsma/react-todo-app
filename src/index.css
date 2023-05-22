@@ -5,6 +5,7 @@ body {
 
 .app {
     padding-top: 10rem;
+    font-family: sans-serif;
 }
 
 .header {
@@ -12,6 +13,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    color: #fff;
 }
 
 .logo {
@@ -81,6 +83,21 @@ input {
     font-size: 1.4rem;
     outline: none;
     width: 100%;
+}
+
+input:focus {
+    font-family: monospace;
+    border-bottom: 1px dashed hcl(0, 0%, 100%);
+}
+
+.display-warning {
+    color: red;
+    position: absolute;
+    transform: translate(30px, 30px);
+}
+
+.hide-warning {
+    display: none;
 }
 
 @keyframes App-logo-spin {
